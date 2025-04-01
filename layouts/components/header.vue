@@ -54,7 +54,7 @@
             </div>
 
             <div class="py-4 relative group">
-                <div class="btn btn-text !hidden lg:!inline-flex">
+                <div class="btn btn-text !hidden md:!inline-flex">
                     <span>Udemy Business</span>
                 </div>
                 <Popover class="bottom-0 translate-y-full w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
@@ -66,7 +66,7 @@
             </div>
 
             <div class="py-4 relative group">
-                <div class="btn btn-text !hidden lg:!inline-flex">Teach on Udemy</div>
+                <div class="btn btn-text !hidden md:!inline-flex">Teach on Udemy</div>
                 <Popover class="bottom-0 translate-y-full w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
                     <div class="px-4 py-4">
                         <div class="font-bold text-main text-lg">Turn what you know into an opportunity and reach millions around the world.</div>
