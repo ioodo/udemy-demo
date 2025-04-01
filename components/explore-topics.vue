@@ -21,7 +21,7 @@ const exploreButtons = ref(['Bitcoin', 'Cryptocurrency & Blockchain', 'Finance &
 .explore-topics {
     @apply text-black mt-8;
     &-content {
-        @apply flex items-center gap-2 mt-4;
+        @apply flex items-center gap-1 mt-4;
     }
 }
 </style>

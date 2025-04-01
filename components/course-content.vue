@@ -7,7 +7,7 @@
                     {{ dataSource.length }} sections • {{ lecturesCount }} lectures • 2h 7m total length
                 </div>
                 <div class="toolbar-right">
-                    <div class="btn">Expand all sections</div>
+                    <div class="btn !pl-0 xs:pl-2">Expand all sections</div>
                 </div>
             </div>
             <div class="course-list">
@@ -19,15 +19,15 @@
                 >
                     <div class="course-list-item-header">
                         <IconArrow class="w-3 h-3 arrow"/>
-                        <div class="break-words pl-4">{{  item.name  }}</div>
-                        <div class="ml-auto text-main text-right font-normal text-sm">{{  item.children?.length || 0  }} lectures • {{ formatSectionDuration(item) }}</div>
+                        <div class="break-words pl-4 break-words text-xs md:text-sm">{{  item.name  }}</div>
+                        <div class="ml-auto text-main text-right font-normal text-xs md:text-sm shrink-0 hidden md:block">{{  item.children?.length || 0  }} lectures • {{ formatSectionDuration(item) }}</div>
                     </div>
 
                     <div v-if="!item.fold" class="py-2 text-main border-b border-solid border-gray-200">
                         <div
                             v-for="(child, index) in (item.children || [])"
                             :key="index"
-                            class="flex items-center px-6 py-2 md:py-4"
+                            class="flex items-center px-3 xs:px-6 py-2 md:py-4"
                         >
                             <div class="mr-4">
                                 <IconPlay class="w-4"/>
@@ -117,9 +117,9 @@ const formatSectionDuration = (section) => {
     @apply mt-8;
 }
 .content {
-    @apply text-sm;
+    @apply text-xs xs:text-sm;
     .toolbar {
-        @apply flex items-center justify-between mt-4;
+        @apply flex xs:items-center xs:justify-between mt-4 flex-col xs:flex-row;
         &-left {
         }
         &-right {
@@ -135,7 +135,7 @@ const formatSectionDuration = (section) => {
             @apply border-x border-solid border-gray-200;
 
             &-header {
-                @apply relative flex items-center bg-[#f6f7f9] px-6 py-4 font-bold md:text-base border-b border-solid border-gray-200 cursor-pointer;
+                @apply relative flex items-center bg-[#f6f7f9] px-3 xs:px-6 py-2 xs:py-4 font-bold md:text-base border-b border-solid border-gray-200 cursor-pointer;
                 .arrow {
                     @apply rotate-90;
                     transition: transform 150ms linear;

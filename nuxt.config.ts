@@ -8,5 +8,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxtjs/tailwindcss'],
   vite: {
     plugins: [svgLoader()]
+  },
+  app: {
+    baseURL: '/udemy-demo/',
+    buildAssetsDir: 'assets'
   }
 })

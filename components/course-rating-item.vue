@@ -3,9 +3,9 @@
         class="item border-b md:border-b-0 border-t border-solid border-gray-200 py-4 md:pb-4 relative flex flex-col h-80 md:h-auto"
     >
         <div class="flex items-center flex-row-reverse md:flex-row">
-            <img :src="item.avarar" class="w-10 h-10 rounded-full shrink-0 mr-4"/>
+            <img :src="item.avarar" class="w-6 xs:w-10 h-6 xs:h-10 rounded-full shrink-0 mr-4"/>
             <div class="flex-1">
-                <div class="font-bold text-base truncate">{{ item.name }}</div>
+                <div class="font-bold text-xs xs:text-base truncate">{{ item.name }}</div>
                 <div class="flex items-center gap-2">
                     <div class="flex items-center gap-0.5 text-[#c4710d]">
                         <template
@@ -24,16 +24,16 @@
                 <IconMore class="h-4 text-gray-300 cursor-pointer"/>
             </div>
         </div>
-        <div class="text-main text-base mt-4">
+        <div class="text-main text-xs xs:text-base mt-4">
             {{ item.description }}
         </div>
         <div class="text-gray-300 text-xs mt-6 flex items-end justify-between flex-1 md:flex-auto">
             <span class="flex items-cennter gap-3">
                 <span>Helpful?</span>
-                <IconLike class="w-4 text-main cursor-pointer"/>
-                <IconLike class="w-4 text-main rotate-180 cursor-pointer"/>
+                <IconLike class="w-3 xs:w-4 text-main cursor-pointer"/>
+                <IconLike class="w-3 xs:w-4 text-main rotate-180 cursor-pointer"/>
             </span>
-            <IconMore class="h-4 text-gray-300 cursor-pointer block md:hidden"/>
+            <IconMore class="h-3 xs:h-4 text-gray-300 cursor-pointer block md:hidden"/>
         </div>
     </div>
 </template>

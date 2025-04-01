@@ -10,10 +10,10 @@
                 class="item"
             >
                 <img :src="item.cover" />
-                <div class="font-bold text-base mt-2 break-words">{{ item.name }}</div>
-                <div class="text-main mt-1 text-xs break-words">{{ item.description }}</div>
+                <div class="font-bold text-xs xs:text-base mt-2 break-words">{{ item.name }}</div>
+                <div class="text-main mt-1 text-[11px] xs:text-xs break-words">{{ item.description }}</div>
                 <div class="flex item-center gap-1 mt-0.5">
-                    <div class="font-bold text-sm truncate text-[#c4710d]">{{ item.score }}</div>
+                    <div class="font-bold text-xs xs:text-sm truncate text-[#c4710d] flex items-center">{{ item.score }}</div>
                     <div class="flex items-center gap-2">
                         <div class="flex items-center gap-0.5 text-[#c4710d]">
                             <template
@@ -31,11 +31,11 @@
                 <div class="mt-0.5 text-[11px] text-main">
                     {{ item.hours }} total hours • {{ item. lectures}} lectures • ALl Levels
                 </div>
-                <div class="font-bold text-black mt-2">${{ item.price }}</div>
+                <div class="font-bold text-black mt-2 text-xs xs:text-base">${{ item.price }}</div>
             </div>
 
             <div class="w-full h-[1px] bg-gray-200 mt-8"></div>
-            <div class="btn btn-default w-full text-sm !text-primary font-bold">
+            <div class="btn btn-default w-full text-xs xs:text-sm !text-primary font-bold">
                 <span>Report abuse</span>
             </div>
         </div>

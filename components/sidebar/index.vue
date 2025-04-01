@@ -3,15 +3,15 @@
         <Preview class="hidden md:block"/>
 
         <div class="md:px-6 md:py-6">
-            <div class="text-xl md:text-2xl font-bold">$19.99</div>
+            <div class="text-sm xs:text-xl md:text-2xl font-bold">$19.99</div>
             <div class="btn btn-primary btn-large w-full mt-4">Add to cart</div>
-            <div class="btn btn-default btn-large w-full mt-2 md:mt-3 font-bold">Buy now</div>
-            <div class="text-main text-xs md:text-sm text-center mt-4">30-Day Money-Back Guarantee</div>
+            <div class="btn btn-default btn-large w-full mt-1 xs:mt-2 md:mt-3 font-bold">Buy now</div>
+            <div class="text-main text-xs md:text-sm text-center mt-2 xs:mt-4">30-Day Money-Back Guarantee</div>
             <div class="hidden md:block">
                 <Courses/>
             </div>
 
-            <div class="flex items-center justify-between text-main text-sm mt-4 md:mt-2 font-bold">
+            <div class="flex items-center justify-between text-main text-xs xs:text-sm mt-4 md:mt-2 font-bold">
                 <div
                     v-for="(item, index) in actions"
                     :key="index"
@@ -22,9 +22,9 @@
             <div class="border border-dashed border-gray-200 px-2 py-1 md:py-2 text-gray-300 font-normal flex items-center mt-2">
                 <div class="min-w-0">
                     <div>
-                        <span class="text-sm md:text-lg font-bold">KEEPLEARNING</span><span class="ml-2 text-xs md:text-sm">is applied</span>
+                        <span class="text-xs xs:text-sm md:text-lg font-bold">KEEPLEARNING</span><span class="ml-2 text-xs md:text-sm">is applied</span>
                     </div>
-                    <div class="text-xs md:text-sm">
+                    <div class="text-xs xs:text-sm">
                         Udemy coupon
                     </div>
                 </div>
@@ -33,7 +33,7 @@
 
             <div class="flex item-stretch gap-2 mt-2 md:mt-3">
                 <div class="border border-solid border-gray-300 flex-1 rounded flex items-center px-4">
-                    <input placeholder="Enter Coupon" class="border-none focus:outline-none placeholder:text-black/60 placeholder:text-sm md:placeholder:text-base"/>
+                    <input placeholder="Enter Coupon" class="border-none focus:outline-none placeholder:text-black/60 placeholder:text-xs xs:placeholder:text-base"/>
                 </div>
                 <div class="btn btn-primary btn-small md:btn-large shrink-0">Apply</div>
             </div>
@@ -63,7 +63,7 @@ const actions = ref(['Share', 'Gift this course', 'Apply Coupon'])
 
 const onScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    className.value = scrollTop >= window.innerHeight / 2 ? 'md:!fixed !top-4' : ''
+    className.value = scrollTop >= window.innerHeight / 2 ? 'md:!fixed !top-4 z-50' : ''
 }
 
 const sidebarClass = computed(() => {

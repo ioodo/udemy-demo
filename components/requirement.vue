@@ -1,7 +1,7 @@
 <template>
     <div class="section">
         <div class="section-title">Requirements</div>
-        <div class="text-sm mt-4 pl-5">
+        <div class="text-xs xs:text-sm mt-4 pl-5">
             <ul class="list-disc text-black">
                 <li>Un qualsiasi dispositivo Computer o Smartphone che navighi online</li>
             </ul>

@@ -7,6 +7,18 @@ module.exports = {
     "./app.vue"
   ],
   theme: {
+    screens: {
+      xxs: '280px',
+
+      xs: '512px',
+      // => @media (min-width: 512px) { ... }
+
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+    },
     extend: {
       width: {
         content: '1180px'

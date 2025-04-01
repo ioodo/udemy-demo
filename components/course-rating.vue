@@ -31,7 +31,7 @@
             >
             </Item>
         </div>
-        <div class="btn btn-default text-sm !text-primary font-bold flex items-center mt-4">
+        <div class="btn btn-default text-xs xs:text-sm !text-primary font-bold flex items-center mt-4">
             <span>Show all reviews</span>
         </div>
     </div>

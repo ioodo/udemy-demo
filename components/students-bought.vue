@@ -7,16 +7,16 @@
                 :key="item.id"
                 class="py-4 flex items-center border-b border-solid border-gray-200 last:border-none"
             >
-                <img :src="item.cover" class="w-16 h-16 object-cover mr-2"/>
-                <div class="flex-1 pr-6">
-                    <div class="font-bold text-base">{{ item.name }}</div>
-                    <div class="text-sm mt-1">
-                        <span v-if="item.bestSeller" class="bg-[#c2e9eb] text-[#0d5261] font-semibold text-xs px-2 py-1 rounded mr-2">Bestseller</span>
+                <img :src="item.cover" class="w-16 h-16 object-cover mr-1 xs:mr-2"/>
+                <div class="flex-1 pr-6 text-[10px] xs:text-base">
+                    <div class="font-bold">{{ item.name }}</div>
+                    <div class="xs:text-sm mt-1">
+                        <span v-if="item.bestSeller" class="bg-[#c2e9eb] text-[#0d5261] font-semibold text-xs px-1 xs:px-2 py-0 xs:py-1 rounded mr-1 xs:mr-2">Bestseller</span>
                         <span class="font-bold text-[#206241]">{{ item.hours }} total hours <span class="text-xs mr-1">•</span> </span>
                         <span>Updated {{ item.updatedAt }}</span>
                     </div>
                 </div>
-                <div class="shrink-0 flex items-start gap-4 text-sm">
+                <div class="shrink-0 flex items-start gap-1 xs:gap-4 text-xs xs:text-sm">
                     <div class="flex items-center flex-1 justify-center">
                         <span class="font-bold text-[#8b4309]">{{ item.score }}</span>
                         <IconStar class="text-[#c4710d] w-3 h-3"/>
@@ -30,7 +30,7 @@
                             <div class="font-bold">${{ item.memberPrice }}</div>
                             <div class="line-through text-xs">${{ item.price }}</div>
                         </div>
-                        <div class="flex justify-end text-main">
+                        <div class="justify-end text-main hidden xs:flex">
                             <div class="w-9 h-9 rounded-full border border-solid border-primary flex items-center justify-center cursor-pointer hover:bg-primary/10">
                                 <IconFav class="text-primary w-6 h-6"/>
                             </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="btn btn-default w-full text-sm !text-primary font-bold flex items-center" @click="toggle">
+        <div class="btn btn-default w-full text-xs xs:text-sm !text-primary font-bold flex items-center" @click="toggle">
             <span>Show {{ fold ? 'more' : 'less'}}</span>
             <IconArrow :class="`ml-2 w-2 color-primary ${fold ? 'rotate-90' : '-rotate-90'}`"/>
         </div>

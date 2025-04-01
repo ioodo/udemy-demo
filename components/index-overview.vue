@@ -12,8 +12,8 @@
 
                 <Preview class="block md:hidden mt-6"/>
 
-                <div class="text-2xl md:text-4xl font-bold md:font-medium mt-8">Coinbase Come Comprare Bitcoin e Guadagnare™?</div>
-                <div class="text-base md:text-xl mt-4 md:mt-6 font-thin break-words">Come Acquistare e Guadagnare Facilmente Bitcoin Su Coinbase Corso Online Completo In Italiano</div>
+                <div class="text-sm sm:text-2xl md:text-4xl font-bold md:font-medium mt-8">Coinbase Come Comprare Bitcoin e Guadagnare™?</div>
+                <div class="text-xs sm:text-base md:text-xl mt-4 md:mt-6 font-thin break-words">Come Acquistare e Guadagnare Facilmente Bitcoin Su Coinbase Corso Online Completo In Italiano</div>
                 <div class="index-overview-rating">
                     <span class="score">4.7</span>
                     <div class="stars">
@@ -58,7 +58,7 @@ const breadcrumbs = ref([{
 
 <style lang="scss" scoped>
 .index-overview {
-    @apply bg-white md:bg-[#1d1e27] w-full text-black md:text-white text-sm font-normal pt-3 pb-12;
+    @apply bg-white md:bg-[#1d1e27] w-full text-black md:text-white text-sm font-normal pt-3 pb-6 xs:pb-12;
 
     &-inner {
         @apply w-11/12 md:w-content m-auto;
@@ -69,10 +69,10 @@ const breadcrumbs = ref([{
     }
 
     .breadcrumb {
-        @apply flex items-center gap-8 text-sm mt-2 md:mt-6 text-primary md:text-secondary font-bold md:font-normal;
+        @apply flex items-center gap-8 text-xs md:text-sm mt-2 md:mt-6 text-primary md:text-secondary font-bold md:font-normal;
 
         &-item {
-            @apply relative hover:cursor-pointer hover:opacity-90;
+            @apply relative hover:cursor-pointer hover:opacity-90 first:hidden md:first:block;
             &:not(:last-child) {
                 &::after {
                     @apply absolute -right-5 top-1/2 w-1.5 h-1.5 -rotate-45 -translate-y-2/4 border-r border-b border-solid border-black md:border-white;
@@ -83,7 +83,7 @@ const breadcrumbs = ref([{
     }
 
     &-rating {
-        @apply flex items-center gap-1.5 mt-5 text-sm;
+        @apply flex items-center gap-1.5 mt-5 text-xs xs:text-sm;
 
         .score {
             @apply text-gold-800 md:text-gold-200 font-semibold;
@@ -98,10 +98,10 @@ const breadcrumbs = ref([{
     }
 
     &-createby {
-        @apply mt-4;
+        @apply text-xs xs:text-base mt-4;
     }
     &-copyright {
-        @apply mt-4 flex md:items-center gap-3 flex-col md:flex-row;
+        @apply mt-4 flex md:items-center gap-3 flex-col md:flex-row text-xs xs:text-base;
         svg {
             @apply text-main md:text-white w-3 h-3;
         }

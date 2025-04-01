@@ -4,7 +4,7 @@
             <div class="index-content-inner-content">
                 <WhatLearn />
                 <ExploreTopics/>
-                <div class="section block md:hidden mt-12 md:mt-0">
+                <div class="section block md:hidden mt-6 xs:mt-12 md:mt-0">
                     <Courses/>
                 </div>
                 <CourseContent />
@@ -41,14 +41,14 @@ import Courses from './sidebar/courses.vue'
         @apply w-11/12 md:w-content m-auto;
 
         &-content {
-            @apply w-full md:w-4/6 px-0 md:px-10 pt-12 md:pt-0;
+            @apply w-full md:w-4/6 px-0 md:px-10 pt-1 xs:pt-12 md:pt-0;
         }
     }
 
     :deep .section {
         @apply text-main;
         .section-title {
-            @apply font-bold text-xl md:text-2xl;
+            @apply font-bold text-sm xs:text-xl md:text-2xl;
         }
     }
 }
