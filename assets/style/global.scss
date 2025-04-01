@@ -1,0 +1,69 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.link {
+    @apply text-primary md:text-secondary underline;
+}
+
+a.link {
+    @apply text-primary;
+}
+
+.btn {
+    @apply inline-flex items-center justify-center h-10 py-0 px-3.5 rounded hover:cursor-pointer;
+}
+
+.btn-default {
+    @apply border border-solid border-primary text-primary hover:bg-primary/10;
+}
+
+.btn-text {
+    @apply text-main hover:bg-primary/10 hover:text-primary;
+}
+
+.btn-primary {
+    @apply bg-primary text-white font-bold hover:bg-opacity-80;
+}
+
+.btn-simple {
+    @apply border border-solid border-gray-300 text-black;
+}
+.btn-simple {
+    &:hover {
+        background: #f6f7f9;
+        color: #000000;
+    }
+}
+
+.btn-small {
+    @apply text-sm h-9 leading-4;
+}
+
+.btn-large {
+    @apply py-6;
+}
